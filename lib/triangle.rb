@@ -2,7 +2,7 @@ class Triangle
   # write code here
   attr_accessor :length1, :length2, :length3
   
-  def initialize(length1, length2, length3)
+  def initialize(length1 = 1, length2 = 1, length3 = 1)
     @length1 = length1
     @length2 = length2
     @length3 = length3
