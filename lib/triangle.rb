@@ -12,7 +12,7 @@ class Triangle
     if @length1 + @length2 < @length3 || @length1 > @length2 + @length3 || @lenght1 + @length3 < @length2 || @length1 == 0 || @length2 == 0 || @length3 == 0
       begin 
         raise TriangleError
-      rescue error => TriangleError 
+      rescue TriangleError => error
         error.message
       end 
     else 
